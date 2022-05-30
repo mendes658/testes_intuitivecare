@@ -1,9 +1,12 @@
+### Descrição
+* Testes 1 ao 4 do processo seletivo para estagiário back-end. Utilização de infra em nuvem com notebooks do Google Colab, dentro das pastas dos testes existem READMEs que detalham cada processo.
+
 ### Versões
 * Python 3.x
 * MySql 8.0
 
-### Pré-requisitos
-* O software ghostscript(https://www.ghostscript.com) é necessário na tarefa de transformar um pdf em uma tabela .csv
+### Pré-requisitos gerais
+* O software ghostscript(https://www.ghostscript.com) é necessário na tarefa de transformar um pdf em uma tabela .csv, caso o teste 2 não seja feito com infra em nuvem em um notebook Google Colab como descrito no README da pasta "Testes 1 e 2".
 * Libraries utilizadas:
 * Beautifulsoup (para trabalhar com o html requisitado)
   ```sh
@@ -22,8 +25,8 @@
   pip install requests
   ```
 ### Considerações
-* Tarefas que eu entendi de forma ambígua estão presentes em forma de comentário nos códigos, mostrando as possíveis interpretações.
-* Os arquivos csv baixados tiveram que ser formatados no excel para serem importados para a database (formato de data, separação entre decimais, etc)
+* Tarefas que eu entendi de forma ambígua estão presentes em forma de comentário nos códigos, mostrando as possíveis interpretações (como na edição de colunas OD e AMB no teste 2).
+* Os arquivos .csv baixados tiveram que ser formatados no excel para serem importados para a database (formato de data, separação entre decimais, etc)
 * Desse modo, os .sql só funcionarão com os arquivos já formatados que estão no repositório, não os originais.
   
 
