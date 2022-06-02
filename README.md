@@ -29,4 +29,5 @@
 * Tarefas que eu entendi de forma ambígua estão presentes em forma de comentário nos códigos, mostrando as possíveis interpretações (como na edição de colunas OD e AMB no teste 2).
 * Os arquivos .csv baixados tiveram que ser formatados no excel para serem importados para a database (formato de data, separação entre decimais, etc)
 * Desse modo, os .sql só funcionarão com os arquivos já formatados que estão no repositório, não os originais.
+* Não consegui realizar o teste 4 por ainda não ter os conhecimentos necessários em Apis e vuejs, apesar de ter tentado bastante.
   
