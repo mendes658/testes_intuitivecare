@@ -13,7 +13,7 @@ anexos_links = []
 # Com o re.compile, a organização dos anexos é feita puxando todos os hrefs das tags <a> que possuem a palavra "Anexo"
 for anexo in soup.find_all("a", string=re.compile('Anexo')):
     anexos_links += [anexo['href']]
-anexos_zip = zipfile.ZipFile('anexos.zip', 'w', compression=zipfile.ZIP_DEFLATED)
+anexos_zip = zipfile.ZipFile('anexos.zip', 'w')
 
 # Faz o download e zipa os arquivos em seguida
 for link in anexos_links:
