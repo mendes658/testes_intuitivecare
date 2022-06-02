@@ -8,28 +8,28 @@ FROM (
 	FROM op_ativas_ans
 	JOIN quarto_tri2021
 	ON op_ativas_ans.registro_ans = quarto_tri2021.reg_ans
-	WHERE quarto_tri2021.descricao LIKE '%EVENTOS/ SINISTROS CONHECIDOS OU AVISADOS  DE ASSISTÊNCIA A SAÚDE MEDICO HOSPITALAR%'
+	WHERE quarto_tri2021.descricao = 'EVENTOS/ SINISTROS CONHECIDOS OU AVISADOS  DE ASSISTÊNCIA A SAÚDE MEDICO HOSPITALAR '
 	UNION
 	SELECT op_ativas_ans.registro_ans,  op_ativas_ans.razao_social,
 	terceiro_tri2021.vl_saldo_final
 	FROM op_ativas_ans
 	JOIN terceiro_tri2021
 	ON op_ativas_ans.registro_ans = terceiro_tri2021.reg_ans
-	WHERE terceiro_tri2021.descricao LIKE '%EVENTOS/ SINISTROS CONHECIDOS OU AVISADOS  DE ASSISTÊNCIA A SAÚDE MEDICO HOSPITALAR%'
+	WHERE terceiro_tri2021.descricao = 'EVENTOS/ SINISTROS CONHECIDOS OU AVISADOS  DE ASSISTÊNCIA A SAÚDE MEDICO HOSPITALAR '
 	UNION 
 	SELECT op_ativas_ans.registro_ans,  op_ativas_ans.razao_social,
 	segundo_tri2021.vl_saldo_final
 	FROM op_ativas_ans
 	JOIN segundo_tri2021
 	ON op_ativas_ans.registro_ans = segundo_tri2021.reg_ans
-	WHERE segundo_tri2021.descricao LIKE '%EVENTOS/ SINISTROS CONHECIDOS OU AVISADOS  DE ASSISTÊNCIA A SAÚDE MEDICO HOSPITALAR%'
+	WHERE segundo_tri2021.descricao = 'EVENTOS/ SINISTROS CONHECIDOS OU AVISADOS  DE ASSISTÊNCIA A SAÚDE MEDICO HOSPITALAR '
 	UNION 
 	SELECT op_ativas_ans.registro_ans,  op_ativas_ans.razao_social,
 	primeiro_tri2021.vl_saldo_final
 	FROM op_ativas_ans
 	JOIN primeiro_tri2021
 	ON op_ativas_ans.registro_ans = primeiro_tri2021.reg_ans
-	WHERE primeiro_tri2021.descricao LIKE '%EVENTOS/ SINISTROS CONHECIDOS OU AVISADOS  DE ASSISTÊNCIA A SAÚDE MEDICO HOSPITALAR%'
+	WHERE primeiro_tri2021.descricao = 'EVENTOS/ SINISTROS CONHECIDOS OU AVISADOS  DE ASSISTÊNCIA A SAÚDE MEDICO HOSPITALAR '
 ) AS teste
 GROUP BY razao_social
 ORDER BY despesa_2021 DESC
