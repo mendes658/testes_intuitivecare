@@ -1,4 +1,5 @@
 ### Teste 3 - Banco de dados
+* Obs: todos os .csv desse teste foram formatados no excel, os .csv originais baixados não funcionarão.
 * Queries .sql para um banco MySql 8.0 que sobem os dados dos .csv para as tabelas e retornam as informações pedidas:
 
 ### 10 operadoras que mais tiveram despesas com "EVENTOS/ SINISTROS CONHECIDOS OU AVISADOS  DE ASSISTÊNCIA A SAÚDE MEDICO HOSPITALAR" no último trimestre:
