@@ -1,24 +1,10 @@
-# hello-world
+### Front-end com Vuejs e Axios
 
-## Project setup
+## Procedimentos iniciais na pasta do projeto
 ```
 npm install
 ```
-
-### Compiles and hot-reloads for development
 ```
 npm run serve
 ```
-
-### Compiles and minifies for production
-```
-npm run build
-```
-
-### Lints and fixes files
-```
-npm run lint
-```
-
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+* Após iniciar o servidor, entre no link local que aparecerá no terminal
