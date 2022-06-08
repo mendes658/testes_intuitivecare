@@ -7,4 +7,4 @@ npm install
 ```
 npm run serve
 ```
-* Após iniciar o servidor, entre no link local que aparecerá no terminal
+* Após iniciar o servidor, entre no link local que aparecerá no terminal.
