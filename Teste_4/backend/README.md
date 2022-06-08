@@ -5,7 +5,7 @@
 * No Visual Studio o procedimento é feito em: View->Command Palette->Select interpreter path
 * No terminal da pasta backend, use os seguinte comandos:
 ```
-\venv\Scripts\activate.bat
+venv\Scripts\activate.bat
 ```
 ```
 uvicorn main:app --reload
