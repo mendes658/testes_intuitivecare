@@ -3,4 +3,4 @@
 ```
 pip install -r requirements.txt
 ```
-* Apósi isso, execute o main.py
+* Após isso, execute o main.py
