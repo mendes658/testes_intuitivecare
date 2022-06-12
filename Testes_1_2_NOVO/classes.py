@@ -5,6 +5,10 @@ import requests
 import re
 from bs4 import BeautifulSoup
 import os
+import pathlib
+
+path = pathlib.Path(__file__).parent.resolve()
+os.chdir(f'{path}')
 
 class ScraperAndReader:
     def __init__(self):
